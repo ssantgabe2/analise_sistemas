@@ -1,0 +1,97 @@
+Detalhamento de casos de uso
+Casos de uso: Cadastrar Pessoas.
+Atores: Atendente.
+Pré Condições: Atendente estar no sistema.
+Pós Condições: A pessoa estará cadastrada no sistema.
+Fluxo Principal:
+O Atendente entra no sistema e entrará em uma tela com as opções “Pessoa Física” e “Pessoa Jurídica”.
+Para cadastrar uma pessoa física, o atendente clica no botão “Pessoa Física”.
+2.1. Ele será levado a uma tela para inserir os dados “nome”, “telefone”, “email”, “CPF”, “endereço”.
+2.2. A pessoa física estará cadastrada.
+Para cadastrar uma pessoa jurídica, o atendente clica no botão “Pessoa Jurídica”.
+3.1. Ele será levado a uma tela para inserir os dados “nome”, “telefone”,”email”, “CNPJ” e “endereço”.
+3.2. A pessoa jurídica estará cadastrada.
+Fluxo Alternativo:
+2.1. Caso os dados sejam incorretos ou falte algum campo, o sistema não deixará o cadastro ser concluído.
+3.1. Caso os dados sejam incorretos ou falte algum campo, o sistema não deixará o cadastro ser concluído.
+
+Detalhamento de casos de uso
+Casos de uso: Cadastrar Tribunais.
+Atores: Atendente.
+Pré Condições: Atendente ter cadastrado o cliente.
+Pós Condições: O Tribunal estará cadastrado
+Fluxo Principal:
+O Atendente entra no sistema.
+O Atendente cadastra ou entra no perfil de alguma pessoa.
+O Atendente é levado a página inicial, que mostra as opções “adicionar varas”, “adicionar tribunal”, “editar perfil”, “processos em curso”.
+3.1. O Atendente seleciona a opção “adicionar tribunal”.
+O sistema mostra uma página com os seguintes campos “nome”, “código”, “varas” e “processos do tribunal”.
+Após preencher os campos adequadamente, o tribunal estará cadastrado.
+
+Fluxo Alternativo:
+4. Caso os campos sejam preenchidos errados, o sistema não deixará o tribunal ser cadastrado.
+
+Detalhamento de casos de uso
+Casos de uso: Cadastrar Varas.
+Atores: Atendente.
+Pré Condições: Atendente ter cadastrado o cliente.
+Pós Condições: As Varas estarão cadastradas.
+Fluxo Principal:
+O Atendente entra no sistema.
+O Atendente cadastra ou entra no perfil de alguma pessoa.
+O Atendente é levado a página inicial, que mostra as opções “adicionar varas”, “adicionar tribunal”, “editar perfil”, “processos em curso”.
+3.1. O Atendente seleciona a opção “adicionar varas”.
+O sistema mostra uma página com os seguintes campos: “nome”, “código” e “tribunal associado”.
+Após preencher os campos adequadamente, a vara estará cadastrada.
+
+Fluxo Alternativo:
+4. Caso os campos sejam preenchidos errados, o sistema não deixará a vara ser cadastrada.
+
+Detalhamento de casos de uso
+Casos de uso: Cadastrar Processos.
+Atores: Advogado.
+Pré Condições: Advogado ter entrado no perfil do cliente.
+Pós Condições: Os processos estarão cadastrados.
+Fluxo Principal:
+O Advogado entra no sistema.
+O Advogado entra no perfil de alguma pessoa.
+O Advogado é levado a página inicial do advogado, que mostra as opções “adicionar varas”, “adicionar processo”, “custos”, “adicionar audiência”.
+3.1. O Advogado seleciona a opção “adicionar processos”.
+O sistema mostra uma página com os seguintes campos: “tribunal número”, “data de abertura” e “data de conclusão”, “partes envolvidas”, “código”, “custo”, “despesas”, “valor”, “descrição” e “data”.
+Após preencher os campos adequadamente, o processo estará cadastrado.
+
+Fluxo Alternativo:
+4. Caso os campos sejam preenchidos errados, o sistema não deixará o processo ser cadastrado.
+
+Detalhamento de casos de uso
+Casos de uso: Registrar Audiências.
+Atores: Advogado.
+Pré Condições: Advogado ter entrado no perfil do cliente.
+Pós Condições: As Audiências estarão cadastradas.
+Fluxo Principal:
+O Advogado entra no sistema.
+O Advogado entra no perfil de alguma pessoa.
+O Advogado é levado a página inicial do advogado, que mostra as opções “adicionar varas”, “adicionar processo”, “custos”, “adicionar audiência”.
+3.1. O Advogado seleciona a opção “adicionar audiência”.
+O sistema mostra uma página com os seguintes campos: “data”, “recomendação do tribunal” e “adicionar audiência”.
+Após preencher os campos adequadamente, a audiência estará cadastrada.
+
+Fluxo Alternativo:
+4. Caso os campos sejam preenchidos errados, o sistema não deixará a audiência ser cadastrada.
+
+
+Detalhamento de casos de uso
+Casos de uso: Registrar custos.
+Atores: Advogado.
+Pré Condições: Advogado ter entrado no perfil do cliente.
+Pós Condições: Os custos estarão registrados.
+Fluxo Principal:
+O Advogado entra no sistema.
+O Advogado entra no perfil de alguma pessoa.
+O Advogado é levado a página inicial do advogado, que mostra as opções “adicionar varas”, “adicionar processo”, “custos”, “adicionar audiência”.
+3.1. O Advogado seleciona a opção “custos”.
+O sistema mostra uma página com os seguintes campos: “valor”, “descrição” e “data” e “adicionar despesas”.
+Após preencher os campos adequadamente, os custos estarão cadastrados.
+
+Fluxo Alternativo:
+4. Caso os campos sejam preenchidos errados, o sistema não deixará os custos serem cadastrados.
